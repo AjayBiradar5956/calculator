@@ -1,0 +1,18 @@
+.cal-container {
+    background-color: beige;
+    height: 75vh;
+    width: 45vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 50px 50px 50px 50px;
+    margin-top: 5%;
+}
+
+.btn {
+    height: 10vh;
+    width: 10vw;
+    background-color: burlywood;
+
+
+}
