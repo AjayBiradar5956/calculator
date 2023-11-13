@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator Project</title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="home.css">
-    <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="cal-container">
-        <button class="btn"> 1</button>
+    <center>
+        <div class="container">
+            <span id="display-area" class="textColor"></span>
+            <button class="items num" id="ac">AC</button>
+            <button class="items num" data-value="--">+/-</button>
+            <button class="items num" id="percent" data-value="%">%</button>
 
-    </div>
+            <button class="items num color" id="divide" data-value="/">/</button>
+
+            <button class="items num" id="seven" data-value="7">7</button>
+            <button class="items num" id="eight" data-value="8">8</button>
+            <button class="items num" id="nine" data-value="9">9</button>
+
+            <button class="items num color" id="multiply" data-value="*">*</button>
+
+            <button class="items num" id="four" data-value="4">4</button>
+            <button class="items num" id="five" data-value="5">5</button>
+            <button class="items num" id="six" data-value="6">6</button>
+
+            <button class="items num color" data-value="-">-</button>
+
+            <button class="items num" id="one" data-value="1">1</button>
+            <button class="items num" id="two" data-value="2">2</button>
+            <button class="items num" id="three" data-value="3">3</button>
+
+            <button class="items num color" id="plus" data-value="+">+</button>
+
+            <button class="zero items num" id="zero" data-value="0">0</button>
+
+            <button class="items num" data-value=".">.</button>
+            <button class="items num color" data-value="=">=</button>
+        </div>
+    </center>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
