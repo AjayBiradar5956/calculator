@@ -9,6 +9,12 @@ function operatorFn() {
     num1 = parseFloat(display.textContent);
     display.textContent = "";
 }
+
+var infinite = function () {
+    display.classList.remove("textColor");
+    display.classList.add("error");
+    display.textContent = "Error";
+}
 var result = function (num1, num2, operator) {
     var res = eval(num1 + " " + operator + " " + num2);
     return res;
@@ -42,7 +48,12 @@ function calculate(e) {
     else if (select === "=") {
         num2 = parseFloat(display.textContent);
         var ans = result(num1, num2, operator);
-        display.textContent = ans;
+        if (ans === Infinity) {
+            infinite();
+        } else {
+            display.textContent = ans;
+
+        }
     }
     else {
         display.textContent += e.target.innerText;
